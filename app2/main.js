@@ -111,9 +111,9 @@ function get_indexobjs_from_verse(verse) {
  for (let i=0; i < indexdata.length; i++ ) {
   let obj = indexdata[i];
   if (verse[0] != obj.pancika) {continue;}
-  // verse[1] (adhyaya) not used !
-  if (verse[2] < obj.v1) {continue;}
-  if (verse[2] > obj.v2) {continue;}
+  // verse[2]  not used !
+  if (verse[1] < obj.v1) {continue;}
+  if (verse[1] > obj.v2) {continue;}
   icur = i;
   break;
  }
